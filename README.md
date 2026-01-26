@@ -71,6 +71,7 @@ python analyzer.py --file OpenSSH_2k.log --threshold 5
 ======== Risk Scores ========
 
 IP              Risk Score      Level
+
 45.33.32.156    52              🔴 CRITICAL
 
 192.168.1.10    41              🟠 HIGH
