@@ -125,3 +125,10 @@ This project focuses on:
 
 Built by Nonsense0909688  
 (Global Hack Week submission)
+
+## Demo
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d75ca324-6926-4e15-bb05-514869ad8736" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0765f06b-72b5-4011-9328-6ccf8c65a880" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7527dede-f502-445b-b320-c1ec56dcce73" />
+
+
