@@ -65,20 +65,26 @@ python analyzer.py --file OpenSSH_2k.log --threshold 5
 ======== Brute-force IPs ========
 
 45.33.32.156    External
+
 192.168.1.10    Internal
 
 ======== Risk Scores ========
 
 IP              Risk Score      Level
 45.33.32.156    52              🔴 CRITICAL
+
 192.168.1.10    41              🟠 HIGH
+
 10.0.0.8        8               🟢 SAFE
 
 ======== SUMMARY REPORT ========
 
 Total unique IPs: 187
+
 Total brute-force IPs: 12
+
 Highest risk IP: 45.33.32.156
+
 Highest risk score: 52
 
 ---
