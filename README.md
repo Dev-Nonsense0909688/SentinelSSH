@@ -77,8 +77,9 @@ python app.py write --top 10 --out report.json --path OpenSSH_2k.log
 ```
 
 ## Example Output
+```bash
 === SSH THREAT REPORT ===
-Generated at : 2026-01-30T18:55:21Z
+Generated at : 2026-01-30T18:55:21Z\n
 Total IPs   : 24
 Total Events: 612
 
@@ -91,6 +92,7 @@ Total Events: 612
      - Automated brute-force detected (80 attempts)
      - SSH brute-force attempts detected (29 attempts)
      - Username enumeration activity (29 attempts)
+```
 
 ## Severity Scoring
 ```bash
