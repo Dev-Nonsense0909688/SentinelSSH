@@ -39,3 +39,67 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/SentinelSSH.git
 cd SentinelSSH
+```
+## Project Structrue
+
+```bash
+SentinelSSH/
+├── app.py                 # Application entry point
+├── src/
+│   ├── attack_events.py   # Attack detection rules
+│   ├── get_data.py        # Log parsing logic
+│   ├── parse_data.py      # Aggregation and severity scoring
+│   ├── generate_report.py # Report generation
+│   └── cli.py             # Command-line interface
+├── OpenSSH_2k.log         # Sample log file
+└── README.md
+```
+## Usage
+
+### Show report in terminal
+```bash
+python app.py show --path OpenSSH_2k.log
+```
+
+### Show only top 5 attacking IPs
+```bash
+python app.py show --top 5 --path OpenSSH_2k.log
+```
+
+### Output raw JSON instead of formatted text
+```bash
+python app.py show --json --path OpenSSH_2k.log
+```
+
+### Write to a file
+```bash
+python app.py write --top 10 --out report.json --path OpenSSH_2k.log
+```
+
+## Example Output
+=== SSH THREAT REPORT ===
+Generated at : 2026-01-30T18:55:21Z
+Total IPs   : 24
+Total Events: 612
+
+1. IP: 187.141.143.180
+   Risk Level   : CRITICAL
+   Severity     : 412
+   Total Events : 184
+   Reasons:
+     - Privileged account (root) brute-force detected (46 attempts)
+     - Automated brute-force detected (80 attempts)
+     - SSH brute-force attempts detected (29 attempts)
+     - Username enumeration activity (29 attempts)
+
+## Severity Scoring
+```bash
+| Attack Type                   | Weight |
+| ----------------------------- | ------ |
+| Username Enumeration          | 1      |
+| SSH Bruteforce                | 2      |
+| Automated Bruteforce          | 3      |
+| Privileged Account Bruteforce | 5      |
+```
+
+
