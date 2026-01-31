@@ -105,3 +105,12 @@ Total Events: 612
 ```
 
 
+## Install locally as Pip
+
+### First Download the project, go into its root. I.e: SentinelSSH and execute the following command.
+```bash
+pip install -e .
+```
+```bash
+sentinelssh scan
+```
