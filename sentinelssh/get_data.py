@@ -8,7 +8,7 @@ CLEAN_RE = re.compile(
 
 RULES = [clss for clss in AttackRule.__subclasses__()]
 
-def get_data(path="sentinelssh/a.log"):
+def get_data(path):
     data = []
 
     try:
